@@ -1,0 +1,77 @@
+* *::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(3, 0, 15);
+  font-size: 1em;
+}
+.listItem {
+  cursor: pointer;
+}
+.taskList li.isCompleted {
+  text-decoration-line: "line-through";
+
+  text-decoration-color: "green";
+  color: rgba(0, 0, 0, 0.253);
+}
+
+header h1.title {
+  text-align: center;
+  color: #fff;
+}
+
+main section.control {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+
+  align-items: center;
+}
+
+span input,
+span button {
+  height: 2em;
+  font-size: 1rem;
+}
+span button {
+  cursor: pointer;
+}
+span button#addButton {
+  background-color: rgb(1, 37, 1);
+  color: #fff;
+  border: none;
+}
+
+span button#clearCompleted {
+  background-color: rgb(134, 170, 3);
+  color: #fff;
+  border: none;
+}
+
+span button#clearList {
+  background-color: rgb(95, 5, 2);
+  color: #fff;
+  border: none;
+  text-transform: capitalize;
+}
+
+main section.display {
+  display: flex;
+  justify-content: center;
+}
+
+main section.display div.container {
+  background-color: beige;
+  height: 20em;
+  width: 25em;
+  margin-top: 2em;
+}
+main section.display div.container ul.taskList {
+  font-size: 1.3rem;
+  list-style: none;
+}
